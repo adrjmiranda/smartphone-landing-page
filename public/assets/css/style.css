@@ -1,0 +1,102 @@
+/***************** Imports *******************/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/***************** Variables *******************/
+:root {
+	/* Colors */
+	--black-color-00: #000;
+	--primary-color: #582770;
+	--secondary-color: #ff0084;
+	--white-color-00: #fff;
+
+	/* Font Family */
+	--title-ff: 'Anton', serif;
+	--text-ff: 'Ubuntu', serif;
+
+	/* Font Wight */
+	--light-fw: 300;
+	--normal-fw: 400;
+	--medium-fw: 500;
+	--semibold-fw: 600;
+
+	/* Width */
+	--container-mw: 1280px;
+
+	/* Padding */
+	--container-pi: 0.85rem;
+}
+
+/***************** General *******************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--text-ff);
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--white-color-00);
+}
+
+a {
+	text-decoration: none;
+}
+
+a i,
+button i {
+	pointer-events: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+	font-family: var(--title-ff);
+	font-weight: var(--normal-fw);
+	color: var(--white-color-00);
+}
+
+button,
+input,
+select,
+textarea {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-weight: var(--light-fw);
+}
+
+/***************** Reusable *******************/
+.container {
+	max-width: var(--container-mw);
+	padding-inline: var(--container-pi);
+	margin: 0 auto;
+}
+
+.logo {
+}
+
+/***************** NAVBAR *******************/
+/* TODO: Create NAVBAR style */
+/************** End of NAVBAR ***************/
+
+/***************** TITLE *******************/
+/* TODO: Create TITLE style */
+/************** End of TITLE ***************/
+
+/***************** IMAGE CONTENT *******************/
+/* TODO: Create IMAGE CONTENT style */
+/************** End of IMAGE CONTENT ***************/
+
+/***************** FORM CONTENT *******************/
+/* TODO: Create FORM CONTENT style */
+/************** End of FORM CONTENT ***************/
+
+/***************** Responsiveness *******************/
