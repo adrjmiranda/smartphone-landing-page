@@ -60,10 +60,12 @@ button i {
 	pointer-events: none;
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
+:is(h1, h2, h3, h4, h5, h6),
+:is(h1, h2, h3, h4, h5, h6) span {
 	font-family: var(--title-ff);
 	font-weight: var(--normal-fw);
 	color: var(--white-color-00);
+	font-size: var(--xxl-fs);
 }
 
 button,
@@ -101,6 +103,7 @@ img {
 
 .logo img {
 	width: 30px;
+	margin-bottom: 0.25rem;
 }
 
 .logo span {
@@ -108,10 +111,40 @@ img {
 	font-weight: var(--normal-fw);
 	font-size: var(--lg-fs);
 	color: var(--white-color-00);
+	background-image: linear-gradient(
+		to left,
+		var(--primary-color),
+		var(--secondary-color),
+		var(--white-color-00)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#home {
+	min-height: 100vh;
+	background-image: linear-gradient(
+			to right,
+			rgba(88, 39, 112, 0.92),
+			rgba(255, 0, 132, 0.25)
+		),
+		url('../img/married.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /***************** NAVBAR *******************/
-/* TODO: Create NAVBAR style */
+#navbar {
+	height: 80px;
+}
+
+.navbar-content {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
 /************** End of NAVBAR ***************/
 
 /***************** TITLE *******************/
