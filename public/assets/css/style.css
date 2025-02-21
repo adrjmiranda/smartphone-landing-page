@@ -20,6 +20,12 @@
 	--medium-fw: 500;
 	--semibold-fw: 600;
 
+	/* Font Size */
+	--base-fs: 1rem;
+	--lg-fs: 1.25rem;
+	--xl-fs: 2.25rem;
+	--xxl-fs: 3.75rem;
+
 	/* Width */
 	--container-mw: 1280px;
 
@@ -42,6 +48,7 @@ body {
 
 body {
 	background-color: var(--white-color-00);
+	font-size: var(--base-fs);
 }
 
 a {
@@ -73,6 +80,12 @@ textarea::placeholder {
 	font-weight: var(--light-fw);
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 /***************** Reusable *******************/
 .container {
 	max-width: var(--container-mw);
@@ -81,6 +94,20 @@ textarea::placeholder {
 }
 
 .logo {
+	display: flex;
+	align-items: flex-end;
+	gap: 0.35rem;
+}
+
+.logo img {
+	width: 30px;
+}
+
+.logo span {
+	font-family: var(--title-ff);
+	font-weight: var(--normal-fw);
+	font-size: var(--lg-fs);
+	color: var(--white-color-00);
 }
 
 /***************** NAVBAR *******************/
