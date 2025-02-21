@@ -49,6 +49,7 @@ body {
 body {
 	background-color: var(--white-color-00);
 	font-size: var(--base-fs);
+	overflow-x: hidden;
 }
 
 a {
@@ -258,3 +259,43 @@ ul {
 /************** End of FORM CONTENT ***************/
 
 /***************** Responsiveness *******************/
+@media screen and (max-width: 990px) {
+	.inner {
+		grid-template-columns: 40% 50%;
+		column-gap: 10%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.title {
+		margin-bottom: 5.75rem;
+	}
+}
+
+@media screen and (max-width: 696px) {
+	.title {
+		margin-bottom: -1.25rem;
+		margin-top: 3rem;
+		text-align: center;
+	}
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image-content img {
+		max-height: 50vh;
+	}
+
+	.form-content {
+		margin-bottom: 2.75rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.navbar-content {
+		justify-content: center;
+	}
+}
