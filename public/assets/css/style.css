@@ -88,6 +88,10 @@ img {
 	height: auto;
 }
 
+ul {
+	list-style: none;
+}
+
 /***************** Reusable *******************/
 .container {
 	max-width: var(--container-mw);
@@ -110,9 +114,9 @@ img {
 	font-family: var(--title-ff);
 	font-weight: var(--normal-fw);
 	font-size: var(--lg-fs);
-	color: var(--white-color-00);
 	background-image: linear-gradient(
 		to left,
+		var(--black-color-00),
 		var(--primary-color),
 		var(--secondary-color),
 		var(--white-color-00)
@@ -125,7 +129,7 @@ img {
 #home {
 	min-height: 100vh;
 	background-image: linear-gradient(
-			to right,
+			to bottom,
 			rgba(88, 39, 112, 0.92),
 			rgba(255, 0, 132, 0.25)
 		),
@@ -133,6 +137,12 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
 }
 
 /***************** NAVBAR *******************/
@@ -148,15 +158,103 @@ img {
 /************** End of NAVBAR ***************/
 
 /***************** TITLE *******************/
-/* TODO: Create TITLE style */
+.title {
+	color: var(--white-color-00);
+}
 /************** End of TITLE ***************/
 
 /***************** IMAGE CONTENT *******************/
-/* TODO: Create IMAGE CONTENT style */
+.inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 3.75rem;
+	align-items: center;
+}
 /************** End of IMAGE CONTENT ***************/
 
 /***************** FORM CONTENT *******************/
-/* TODO: Create FORM CONTENT style */
+.form-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3.25rem;
+}
+
+.form-description {
+	color: var(--white-color-00);
+	font-size: var(--lg-fs);
+	font-weight: var(--light-fw);
+	text-transform: capitalize;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+}
+
+#form input {
+	border: 1px solid var(--white-color-00);
+	padding: 0.55rem 0.95rem;
+	border-radius: 0.45rem;
+	color: var(--white-color-00);
+	font-weight: var(--medium-fw);
+	font-size: var(--base-fs);
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn {
+	background-image: linear-gradient(
+		-37deg,
+		var(--black-color-00),
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	padding: 0.55rem 0.95rem;
+	border-radius: 0.45rem;
+	color: var(--white-color-00);
+	font-size: var(--base-fs);
+	font-weight: var(--medium-fw);
+	cursor: pointer;
+	text-transform: capitalize;
+	transition: 0.35s ease-in-out;
+}
+
+.btn:hover {
+	background-image: linear-gradient(
+		37deg,
+		var(--black-color-00),
+		var(--primary-color),
+		var(--secondary-color)
+	);
+}
+
+.form-social {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	justify-content: center;
+}
+
+.social-link {
+	background-color: var(--white-color-00);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.45rem;
+	border-radius: 0.45rem;
+	opacity: 0.65;
+	transition: 0.36s ease-in-out;
+}
+
+.social-link:hover {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+.social-link i {
+	color: var(--primary-color);
+	font-size: var(--lg-fs);
+}
 /************** End of FORM CONTENT ***************/
 
 /***************** Responsiveness *******************/
